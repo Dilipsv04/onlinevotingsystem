@@ -7,7 +7,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://dilip5050505:q7oC07Q8VQo6LCcn@cluster0.xnq5z.mongodb.net/votingsystem")
+mongoose.connect("mongodb+srv://dilip5050505:*********n@cluster0.xnq5z.mongodb.net/votingsystem")
 
 app.post("/login",(req,res)=>{
     const{email,password}=req.body;
@@ -66,7 +66,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://dilip5050505:q7oC07Q8VQo6LCcn@cluster0.xnq5z.mongodb.net/votingsystem");
+mongoose.connect("mongodb+srv://dilip5050505:*******n@cluster0.xnq5z.mongodb.net/votingsystem");
 
 // Login route
 app.post("/login", (req, res) => {
@@ -149,7 +149,7 @@ app.use(express.json({ limit: "10mb" })); // Handle large base64 payloads
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect("mongodb+srv://dilip5050505:q7oC07Q8VQo6LCcn@cluster0.xnq5z.mongodb.net/votingsystem");
+mongoose.connect("mongodb+srv://dilip5050505:********n@cluster0.xnq5z.mongodb.net/votingsystem");
 
 // Use routes
 app.use("/auth", authRoutes); // Routes for login and registration
